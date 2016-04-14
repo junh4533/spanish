@@ -5,15 +5,10 @@ body,
     height: 100%;
 }
 
-#home {
-    /*min-height: 100%;*/
-    background-size: cover;
-    background: linear-gradient(to top left, orange, gold);
-}
-
 #flag {
-    width: 300px;
-    opacity: 0.7;
+    width: 100%;
+    height:100%;
+    opacity: 0.8;
 }
 
 
@@ -66,3 +61,21 @@ ul {
     max-height: 400px;
     min-height: 400px;
 }
+#home{
+    width: 100%;
+      height: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.1)
+      ),
+        url('images/flag.png') no-repeat center;
+      background-size: cover;
+      text-align: center;
+    }
+.text-vertical-center {
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+      color: white;
+    }
+    
