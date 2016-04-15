@@ -73,10 +73,15 @@ ul {
     box-shadow: 10px 10px 5px #888888;
 }
 
+
 #flight{
     background:url("images/airlinesBackground.jpg")  no-repeat center;
 background-size: cover;
    background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.7);
-    
+}
+
+.homeText{
+color:#ffe123;    
+
 }
