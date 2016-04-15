@@ -8,6 +8,7 @@ body,
 /*navbar positioning*/
 
 .navbar {
+    /*margin-top:20%;*/
     text-align: center;
     margin-bottom: 0;
 }
@@ -78,10 +79,15 @@ ul {
     background:url("images/airlinesBackground.jpg")  no-repeat center;
 background-size: cover;
    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .homeText{
 color:#ffe123;    
 
+}
+
+#logo{
+    width:80px;
+    height:30px;
 }
