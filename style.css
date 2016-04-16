@@ -13,12 +13,12 @@ body,
 
 /*universal CSS*/
 
-.text-center {
-    text-align: center;
-}
-
 .shadow {
     box-shadow: 10px 10px 5px #888888;
+}
+
+.margin-auto {
+    margin: auto;
 }
 
 
@@ -39,52 +39,12 @@ ul {
 }
 
 
-/*map animation*/
-
-#map {
-    position: relative;
-    height: 100%;
-    left: 30%;
-    transition: 1s ease-in;
-}
-
-#mapContainer {
-    position: relative;
-    top: 10%;
-    left: 5%;
-    width: 90%;
-    height: 80%;
-}
-
-#map:hover {
-    /*use scale*/
-    transform: scale(3, 3) translate(0px, -25%);
-}
-
-
-/*caraousel CSS*/
-
-.carousel {
-    width: 100%;
-    height: 400px;
-}
-
-#carouselGrid {
-    left: 8.5%;
-}
-
-.carousel-inner img {
-    margin: auto;
-    max-height: 400px;
-    min-height: 400px;
-    object-fit: contain;
-}
-
 /*background*/
 
 .tab-pane {
     background: url("images/sky.jpg") no-repeat center;
     background-size: cover;
+    text-align: center;
 }
 
 #home {
@@ -103,4 +63,53 @@ ul {
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/*map animation*/
+
+#map {
+    position: relative;
+    height: 100%;
+    transition: 1s ease-in;
+    margin: auto;
+}
+
+#mapContainer {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+}
+
+#map:hover {
+    transform: scale(3, 3) translate(0px, -25%);
+}
+
+
+/*carousel CSS*/
+
+.carousel {
+    width: 100%;
+    height: 400px;
+}
+
+#carouselGrid {
+    left: 8.5%;
+}
+
+.carousel-inner img {
+    margin: auto;
+    max-height: 400px;
+    min-height: 400px;
+    object-fit: contain;
+}
+
+
+/*work in progress*/
+
+#entranceCol {
+    position: relative;
+    left: 16.6%;
 }
