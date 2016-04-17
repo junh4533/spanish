@@ -150,3 +150,18 @@ ul {
 .carousel-caption{
     color:gold;
 }
+
+#airlines2{
+    height:50px;
+}
+
+/*.test{*/
+/*     transition: 3s;*/
+/*  margin-left: 50% ;*/
+/*  scale()*/
+/*}*/
+
+#airlines1{
+   
+    position:relative;
+}
