@@ -21,6 +21,10 @@ body,
     margin: auto;
 }
 
+body{
+    color:yellow;
+}
+
 
 /*navbar/logo CSS*/
 
@@ -34,8 +38,13 @@ ul {
 }
 
 #logo {
-    width: 80px;
+    width: 30px;
     height: 30px;
+}
+
+#homeLogo{
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -45,21 +54,37 @@ ul {
     background: url("images/sky.jpg") no-repeat center;
     background-size: cover;
     text-align: center;
+     background-blend-mode: multiply;
+    background-color: rgba(0, 15, 30, 0.2);
 }
 
 #home {
     width: 100%;
     height: 100%;
-    background: url('images/plazaNight.jpg') no-repeat center;
+    background: url('images/home/plazaNight.jpg') no-repeat center;
     background-size: cover;
     text-align: center;
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffe123;
 }
 
+#location{
+    background: url("images/home/flag.png") center no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 25, 50, 0.7);
+}
+
+#flag {
+    width: 40%;
+    height: 26.6%;
+    position: relative;
+    margin-left: 30%
+}
+
 #foods {
-    background: url("images/foodsBackground.jpg") no-repeat center;
+    background: url("images/foods/foodsBackground.jpg") no-repeat center;
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.4);
@@ -70,7 +95,7 @@ ul {
 
 #map {
     position: relative;
-    height: 100%;
+    /*height: 100%;*/
     transition: 1s ease-in;
     margin: auto;
 }
@@ -80,7 +105,8 @@ ul {
     top: 10%;
     left: 5%;
     width: 90%;
-    height: 80%;
+    
+    /*height: 100%;*/
 }
 
 #map:hover {
@@ -112,4 +138,15 @@ ul {
 #entranceCol {
     position: relative;
     left: 16.6%;
+}
+
+@media (max-width: 767px) {
+    .navbar li {
+        display: block;
+        float: none;
+    }
+}
+
+.carousel-caption{
+    color:gold;
 }
