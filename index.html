@@ -17,17 +17,7 @@
   <!--link to external stylesheet-->
   <link rel="stylesheet" href="style.css">
 
-  <script>
-    $(document).ready(function() {
-      $("#airlines1Button").click(function() {
-        var img = $("#plane");
-        img.animate({
-          marginLeft: "200px"
-        }, 1000);
-        // $("#airlines1").fadeIn();
-      });
-    });
-  </script>
+
 
 </head>
 
@@ -83,24 +73,106 @@
     </div>
 
     <div class="tab-pane" id="flight">
-      <button id="airlines1Button">Details</button>
-      <img id="plane" src="images/flights/plane.png">
+      <h3>Quedarán por una semana, de veintitrés a la treinta de abril</h3>
+      <!--arrive-->
+      <button id="airlines1Button" data-toggle="collapse" data-target="#arrive">Llegar</button>
       <br>
-      <br>
-      <img src="images/flights/airlines.gif" id="airlines1">Flight 1301
-      <br>
-      <img src="images/flights/airlines2.gif" id="airlines2"> Flight 2380
-      <br>
-      <p>Quedarán por una semana</p>
-      <p>Saldrán en el veintitres de Abril</p>
-      <p>Volverán en el treinta de Abril</p>
 
-      <h1>Salir</h1>
-      <p>Saldrán "JFK" a las cuatro y diez de la tarde</p>
-      <p>Saldrán "Aeropuerto de Carrasco" a las siete y veintitres de la manana</p>
+      <div id="arrive" class="collapse">
+        <div id="planeDiv">
+          <img id="plane" src="images/flights/plane.png">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row ">
+          <h2>Saldrán en Sabado, el veintitrés de abril</h2>
+          <div class="col-sm-4">
+            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
+            <p>Saldrán "Aeropuerto JFK" a las cuatro y diez de la tarde</p>
+            <img src="images/flights/airlines.gif" id="airlines1">
+
+            <p>Vuelo 1301</p>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
+            <p>Llegarán "Aeropuerto Ezeiza" a las cuatro y cinco de la mañana</p>
+            <p>Después, transbordarán a "vuelo 2382"</p>
+            <img src="images/flights/airlines.gif" id="airlines1">
+            <div class="glyphicon glyphicon glyphicon glyphicon-arrow-right"></div>
+            <img id="airlines2" src="images/flights/airlines2.gif" id="airlines2">
+            <p>Vuelo 2382</p>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
+            <p>Llegarán Montevideo a las doce menos diecisiete de la mañana</p>
+
+            <img id="airlines2" src="images/flights/airlines2.gif" id="airlines2">
+            <p>Vuelo 2382</p>
+            
+          </div>
+        </div>
+        <h2>Llegarán en domingo, el veinticuatro de abril</h2>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <!--leave-->
+      <button id="airlines2Button" data-toggle="collapse" data-target="#leave">Volver</button>
+      <div id="leave" class="collapse">
+        <div id="planeDiv2">
+          <img id="plane2" src="images/flights/planeFlip.png">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+          <h2>Volverán en Sabado, el treinta de abril</h2>
+
+          <div class="col-sm-4">
+            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
+            <p>Llegarán "Aeropuerto JFK" a las diez menos cinco de la mañana </p>
+            <img src="images/flights/airlines.gif" id="airlines1">
+
+            <p>Vuelo 1300</p>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
+            <p>Saldrán "Aeropuerto Ezeiza" a las ocho y media de la tarde</p>
+            <p>Después, transbordarán a "vuelo 1300"</p>
+            <img src="images/flights/airlines.gif" id="airlines1">
+            <div class="glyphicon glyphicon glyphicon glyphicon-arrow-left"></div>
+            <img id="airlines2" src="images/flights/airlines2.gif" id="airlines2">
+            <p>Vuelo 1300</p>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
+            <p>Saldrán Montevideo a las ocho menos veintitres de la tarde</p>
+
+            <img id="airlines2" src="images/flights/airlines2.gif" id="airlines2">
+            <p>Vuelo numero 2397</p>
+
+          </div>
+        </div>
+        <h2>Llegarán en domingo, el primero de mayo</h2>
+      </div>
+
 
 
     </div>
+
 
     <div class="tab-pane" id="hotel">
 
@@ -130,7 +202,7 @@
             <img src="images/hotel/hotelGym.jpg">
             <div class="caption">
 
-              <h1>Pueden hacer ejercicios en gimnasio.</h1>
+              <h1>Podrán hacer ejercicios en gimnasio.</h1>
 
             </div>
           </div>
@@ -141,7 +213,7 @@
             <img src="images/hotel/hotelTerrace.jpg">
             <div class="caption">
 
-              <h1>Pueden disfrutar la vista de la ciudad en la terraza</h1>
+              <h1>Disfrutarán la vista de la ciudad en la terraza</h1>
 
             </div>
           </div>
@@ -259,13 +331,107 @@
       </div>
       <!--carousel end-->
 
+      <!--dinner-->
+      <div class="row">
+
+        <div id="tangoBox" class="col-xs-12 col-md-4">
+          <h3>El espectáculo de Tango</h3>
+          <img class="shadow" id="tango" src="images/foods/tango.jpg">
+        </div>
+
+        <div class="col-xs-12 col-md-8">
+          <div>
+            <h1>Cena</h1>
+          </div>
+
+          <div id="carousel3" class="carousel slide" data-ride="carousel">
+            <!--carousel nav-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel2" data-slide-to="1"></li>
+              <li data-target="#carousel2" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <img src="images/foods/asado.jpg" alt="1">
+                <div class="carousel-caption">
+                  <h3>Asado</h3>
+
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="images/foods/dulce.jpg" alt="2">
+                <div class="carousel-caption">
+                  <h3>Dulce le leche</h3>
+
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="images/foods/flan.jpg" alt="2">
+                <div class="carousel-caption">
+                  <h3>Flan</h3>
+
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <!--carousel arrows-->
+            <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
 
 
     </div>
 
     <div class="tab-pane" id="excursions">
 
-      excursions
+      <div class="row">
+        <h1>Montarán a bicicleta</h1>
+        <div id="bikingRow" class="col-sm-5 ">
+          <img id="biking" class="img-responsive center-block shadow img-rounded" src="images/excursions/bikingGif.gif">
+
+        </div>
+
+        <div class="col-sm-5 ">
+          <img class="img-responsive center-block shadow img-rounded" src="images/excursions/rambla.jpg">
+        </div>
+
+
+
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <h1>Sufearán en la Playa Pocitos</h1>
+        <div class="col-md-6 col-xs-12">
+          <img class="img-responsive center-block shadow img-rounded" src="images/excursions/pocitos.jpg">
+        </div>
+
+        <div id="surfRow" class="col-md-6 col-xs-12">
+          <img class="img-responsive center-block shadow img-rounded" src="images/excursions/surfingGif.gif">
+        </div>
+
+      </div>
 
     </div>
 
@@ -274,17 +440,19 @@
       <div class="row">
 
         <div>
-          <h2>Plaza Independencia</h2>
-          <p>Blah about plaza ind.</p>
+          <h1>Plaza Independencia</h1>
+          <h3>Visitarán la Plaza Independencia </h3>
         </div>
 
         <div class="col-sm-6">
           <img class="img-responsive center-block shadow img-rounded" src="images/attractions/plaza1.jpg">
+        <h4>Verán un monumento en el centre de la plaza.</h4>
         </div>
 
-        <div class="col-sm-5">
+        <div class="col-sm-6">
 
           <img class="img-responsive center-block shadow img-rounded" src="images/attractions/plaza2.jpg">
+        <h4>Verán muchos edificios en la plaza.</h4>
         </div>
 
       </div>
@@ -294,14 +462,16 @@
         <div>
 
           <h1>Mercado del Puerto</h1>
-          <p>Blah</p>
+          <h3>Explorarán el mercado y disfrutarán las comidas</h3>
 
           <div class="col-sm-6 ">
-            <img class="img-responsive" src="images/attractions/market1.jpg">
+            <img class="img-responsive center-block shadow img-rounded" src="images/attractions/mercado1.jpg">
+          <h4>Probarán muchas comidas, como los asados.</h4>
           </div>
 
           <div class="col-sm-6">
-            <img class="img-responsive" src="images/attractions/market2.jpg">
+            <img class="img-responsive center-block shadow img-rounded" src="images/attractions/mercado3.jpg">
+         <h4>Podrán comprar souvenirs para recordar el viaje.</h4>
           </div>
         </div>
 
@@ -314,46 +484,74 @@
         <table class="table">
           <thead>
             <tr>
-              <th>Gasto</th>
-              <th>Avion</th>
-              <th>Hotel</th>
-              <th>Transportation</th>
+              <th>Vaaje en avión</th>
+              <th>Hotel por una semana </th>
+              <th>Transportación</th>
               <th>Actividades</th>
-              <th>Total</th>
+              <th>Comidas</th>
+              <th>Total estimado</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Price</td>
-              <td>$1057</td>
-              <td>$580</td>
-              <td>Taxi($30)
-                <br> Tour Bus($80)
-                <br>
+              <td>$1211</td>
+              <td>$559</td>
+               <td>
+                <ul>
+                  Taxi: $1.23 por una mila
+                </ul>
               </td>
-              <td>boating($20)
-                <br> surfing($100)
+              <td>
+                <ul>
+                  <li>Rentar de bicicletas($10 por cuatro horas)</li>
+                  <li>Rentar de tablas de surfear($5 por una hora)</li>
+                </ul>
               </td>
-              <td>$1800</td>
+              <td>
+
+                <ul>
+                  <li>desayuno gratis!</li>
+                  <li>El espectáculo de Tango con cena: $70</li>
+                </ul>
+              </td>
+              <td>$2000</td>
             </tr>
 
-            <tr>
-              <td>Subtotal</td>
-              <td>$1057</td>
-              <td>$580</td>
-              <td>$100</td>
-              <td>$200</td>
-              <td>$2100</td>
-            </tr>
 
           </tbody>
         </table>
+
       </div>
+
+
+      <p>*La ciudad de Montevideo es más o menos veinticinco milas de largo*</p>
     </div>
+
+
+  </div>
 
   </div>
 </body>
 <!--cool website-->
 <!--http://blackrockdigital.github.io/startbootstrap-business-casual/blog.html-->
+<script>
+  $(document).ready(function() {
+
+    $("#airlines1Button").click(function() {
+      $("#planeDiv").animate({
+        left: "80%"
+      }, 30000);
+    });
+
+    $("#airlines2Button").click(function() {
+      $("#planeDiv2").animate({
+        right: "80%"
+      }, 30000);
+
+    });
+
+
+  });
+</script>
 
 </html>

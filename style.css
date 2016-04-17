@@ -4,25 +4,27 @@ html,
 body,
 .tab-content {
     height: 100%;
+    width: 100%;
 }
 
 .tab-pane {
     min-height: 100%;
+    width: 100%;
 }
 
 
 /*universal CSS*/
 
 .shadow {
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px white;
 }
 
 .margin-auto {
     margin: auto;
 }
 
-body{
-    color:yellow;
+body {
+    color: yellow;
 }
 
 
@@ -42,7 +44,7 @@ ul {
     height: 30px;
 }
 
-#homeLogo{
+#homeLogo {
     width: 50px;
     height: 50px;
 }
@@ -54,8 +56,9 @@ ul {
     background: url("images/sky.jpg") no-repeat center;
     background-size: cover;
     text-align: center;
-     background-blend-mode: multiply;
+    background-blend-mode: multiply;
     background-color: rgba(0, 15, 30, 0.2);
+    position: relative;
 }
 
 #home {
@@ -69,7 +72,7 @@ ul {
     color: #ffe123;
 }
 
-#location{
+#location {
     background: url("images/home/flag.png") center no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
@@ -105,8 +108,6 @@ ul {
     top: 10%;
     left: 5%;
     width: 90%;
-    
-    /*height: 100%;*/
 }
 
 #map:hover {
@@ -147,22 +148,53 @@ ul {
     }
 }
 
-.carousel-caption{
-    color:gold;
+.carousel-caption {
+    color: gold;
 }
 
-#airlines2{
-    height:50px;
+#tangoBox {
+    position: relative;
+    margin-top: 10%;
 }
 
-/*.test{*/
-/*     transition: 3s;*/
-/*  margin-left: 50% ;*/
-/*  scale()*/
-/*}*/
+#biking {
+    width: 200px;
+    height: 150px;
+}
 
-#airlines1{
-  
-    position:relative;
+#bikingRow {
+    position: relative;
+    margin-top: 5%;
+}
+
+#surfRow {
+    position: relative;
+    margin-top: 5%;
+}
+
+#plane {
+    position: absolute;
+    left: 0;
+}
+
+#plane2 {
+    position: absolute;
+    right: 0;
+}
+
+#planeDiv {
+    position: relative;
+}
+
+#planeDiv2 {
+    position: relative;
+}
+
+#airlines2 {
+    height: 50px;
+}
+
+h2{
+    text-align:center;
 }
 
