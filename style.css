@@ -4,13 +4,13 @@ html,
 body,
 .tab-content {
     height: 100%;
-    width: 100%;
+    
 }
 
 .tab-pane {
     min-height: 100%;
-    width: 100%;
-}
+    
+    }
 
 
 /*universal CSS*/
@@ -87,13 +87,14 @@ ul {
     height: 26.6%;
     position: relative;
     margin-left: 30%
-}
+    }
 
 #foods {
     background: url("images/foods/foodsBackground.jpg") no-repeat center;
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.4);
+    color:#1E90FF;
 }
 
 #hotel {
@@ -203,7 +204,7 @@ ul {
 
 #tangoBox {
     position: relative;
-    margin-top: 10%;
+    margin-top: 5%;
     text-shadow: 1px 1px gold
 }
 
@@ -268,4 +269,12 @@ h2 {
 #logoText {
     font-weight: 900;
     font-size: 80px;
+}
+
+.light{
+    color:#debeff;
+}
+
+.dark{
+    color:#aa3863;
 }
