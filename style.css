@@ -24,7 +24,7 @@ body,
 }
 
 body {
-    color: red;
+    color: #0038A8;
     font-family: 'Bree Serif', serif;
 }
 
@@ -78,6 +78,8 @@ ul {
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 25, 50, 0.7);
+    text-shadow: 3px 3px #0038A8;
+    color: white;
 }
 
 #flag {
@@ -92,6 +94,51 @@ ul {
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+#hotel {
+    background: url('images/monteNight.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #debeff;
+    text-shadow: 2px 2px #096ab1;
+}
+
+#flight {
+    color: white;
+    font-size: 20px;
+}
+
+#excursions {
+    background: url('images/pocitosBeach.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #14f7ef;
+}
+
+#attractions {
+    background: url('images/attractions/attractionsBack.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #62f464;
+}
+
+.table {
+    font-size: 20px;
+}
+
+#pricing {
+    font-size: 15px;
+}
+
+.caption > h1 {
+    color: #755085;
 }
 
 
@@ -142,7 +189,7 @@ ul {
     left: 16.6%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 781px) {
     .navbar li {
         display: block;
         float: none;
@@ -150,12 +197,14 @@ ul {
 }
 
 .carousel-caption {
-    color: gold;
+    color: #0038A8;
+    text-shadow: 1px 1px gold;
 }
 
 #tangoBox {
     position: relative;
     margin-top: 10%;
+    text-shadow: 1px 1px gold
 }
 
 #biking {
@@ -196,24 +245,27 @@ ul {
     height: 50px;
 }
 
-h2{
-    text-align:center;
+h2 {
+    text-align: center;
 }
 
-#Htext{
-    color:blue;
+#pricing {
+    color: #0EF0D9;
 }
 
-#extext{
-    color:pink;
+.red {
+    color: #c85050;
 }
 
-#atext{
-    color:#C0ED1C;
+.orange {
+    color: #d97020;
 }
-h3{
-    color:#F2B40A;
+
+.gold {
+    color: gold;
 }
-#pricing{
-    color:#0EF0D9;
+
+#logoText {
+    font-weight: 900;
+    font-size: 80px;
 }

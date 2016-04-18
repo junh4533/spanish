@@ -38,7 +38,7 @@
     <!--nav links-->
     <div class="collapse navbar-collapse navbarCollapse">
       <ul class="nav nav-tabs nav-pills ">
-        <li class="active"> <a href="#home" data-toggle="pill">HomePage</a></li>
+        <li class="active"> <a href="#home" data-toggle="pill">HSTAT Viajes</a></li>
         <li> <a href="#location" data-toggle="pill">Ubicación</a> </li>
         <li> <a href="#flight" data-toggle="pill">Vuelo</a></li>
         <li> <a href="#hotel" data-toggle="pill">Hotel</a></li>
@@ -59,9 +59,9 @@
         <img id="flag" src="images/home/flag.png" class="img-responsive">
       </div>
 
-      <h1 class="homeText">HSTAT Viajes</h1>
-      <h3 class="homeText ">El mejor experenica</h3>
-      <h3 class="homeText ">El precio más barato</h3>
+      <h1 id="logoText" class="homeText">HSTAT Viajes</h1>
+      <h4 class="homeText ">El mejor experenica</h4>
+      <h4 class="homeText ">El precio más barato</h4>
     </div>
 
     <div class="tab-pane" id="location">
@@ -76,7 +76,7 @@
     <div class="tab-pane" id="flight">
       <h3>Quedarán por una semana, de veintitrés a la treinta de abril</h3>
       <!--arrive-->
-      <button id="airlines1Button" data-toggle="collapse" data-target="#arrive">Llegar</button>
+      <button id="airlines1Button" data-toggle="collapse" data-target="#arrive">Salir</button>
       <br>
 
       <div id="arrive" class="collapse">
@@ -90,30 +90,30 @@
         <br>
         <div class="row ">
           <h2>Saldrán en Sabado, el veintitrés de abril</h2>
-          <div class="col-sm-4">
-            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
-            <p>Saldrán "Aeropuerto JFK" a las cuatro y diez de la tarde</p>
+          <div class="col-sm-4 gold">
+            <div class="glyphicon glyphicon glyphicon-map-marker ">NYC</div>
+            <p>Saldrán "Aeropuerto JFK" a las cuatro y diez de la tarde.</p>
             <img src="images/flights/airlines.gif" id="airlines1">
 
-            <p>Vuelo 1301</p>
+            <p>Tomarán el Vuelo 1301</p>
           </div>
 
-          <div class="col-sm-4">
-            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
-            <p>Llegarán "Aeropuerto Ezeiza" a las cuatro y cinco de la mañana</p>
-            <p>Después, transbordarán a "vuelo 2382"</p>
+          <div class="col-sm-4 orange">
+            <div class="glyphicon glyphicon glyphicon-map-marker">Buenos Aires</div>
+            <p>Llegarán "Aeropuerto Ezeiza" a las cuatro y cinco de la mañana.</p>
+            <p>Después, transbordarán a "vuelo 2382".</p>
             <img src="images/flights/airlines.gif" id="airlines1">
             <div class="glyphicon glyphicon glyphicon glyphicon-arrow-right"></div>
             <img id="airlines2" src="images/flights/airlines2.gif" id="airlines2">
-            <p>Vuelo 2382</p>
+            <p>Tomarán el vuelo 2382</p>
           </div>
 
-          <div class="col-sm-4">
-            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
-            <p>Llegarán Montevideo a las doce menos diecisiete de la mañana</p>
+          <div class="col-sm-4 red">
+            <div class="glyphicon glyphicon glyphicon-map-marker ">Montevideo</div>
+            <p>Llegarán Montevideo a las doce menos diecisiete de la mañana.</p>
 
             <img id="airlines2" src="images/flights/airlines2.gif" id="airlines2">
-            <p>Vuelo 2382</p>
+            <p>Tomarán el vuelo 2382</p>
             
           </div>
         </div>
@@ -140,34 +140,34 @@
         <div class="row">
           <h2>Volverán en Sabado, el treinta de abril</h2>
 
-          <div class="col-sm-4">
-            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
-            <p>Llegarán "Aeropuerto JFK" a las diez menos cinco de la mañana </p>
+          <div class="col-sm-4 gold">
+            <div class="glyphicon glyphicon glyphicon-map-marker">NYC</div>
+            <p>Llegarán "Aeropuerto JFK" a las diez menos cinco de la mañana.</p>
             <img src="images/flights/airlines.gif" id="airlines1">
 
-            <p>Vuelo 1300</p>
+            <p>Tomarán el vuelo 1300</p>
           </div>
 
-          <div class="col-sm-4">
-            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
-            <p>Saldrán "Aeropuerto Ezeiza" a las ocho y media de la tarde</p>
-            <p>Después, transbordarán a "vuelo 1300"</p>
+          <div class="col-sm-4 orange">
+            <div class="glyphicon glyphicon glyphicon-map-marker">Buenos Aires</div>
+            <p>Saldrán "Aeropuerto Ezeiza" a las ocho y media de la tarde.</p>
+            <p>Después, transbordarán a "vuelo 1300".</p>
             <img src="images/flights/airlines.gif" id="airlines1">
             <div class="glyphicon glyphicon glyphicon glyphicon-arrow-left"></div>
             <img id="airlines2" src="images/flights/airlines2.gif" id="airlines2">
-            <p>Vuelo 1300</p>
+            <p>Tomarán el vuelo 1300</p>
           </div>
 
-          <div class="col-sm-4">
-            <div class="glyphicon glyphicon glyphicon-map-marker"></div>
-            <p>Saldrán Montevideo a las ocho menos veintitres de la tarde</p>
+          <div class="col-sm-4 red">
+            <div class="glyphicon glyphicon glyphicon-map-marker">Montevideo</div>
+            <p>Saldrán Montevideo a las ocho menos veintitres de la tarde.</p>
 
             <img id="airlines2" src="images/flights/airlines2.gif" id="airlines2">
-            <p>Vuelo numero 2397</p>
+            <p>Tomarán el vuelo 2397</p>
 
           </div>
         </div>
-        <h2>Llegarán en domingo, el primero de mayo</h2>
+        <h2>Llegarán a Nueva York en domingo, el primero de mayo</h2>
       </div>
 
 
@@ -180,8 +180,8 @@
       <div class="row">
         <div id="entranceCol" class="col-xs-8">
 
-          <img class="img-responsive margin-auto" src="images/hotel/hotelEnt.jpg">
-          <h1 id="Htext">Se quedara en "Pocitos Plaza Hotel"</h1>
+          <img class="img-responsive img-rounded margin-auto" src="images/hotel/hotelEnt.jpg">
+          <h1>Se quedará en "Pocitos Plaza Hotel"</h1>
         </div>
       </div>
 
@@ -192,7 +192,7 @@
             <img src="images/hotel/hotelRoom.jpg">
             <div class="caption">
 
-              <h1 id="Htext">Se quedaran en este cuarto.</h1>
+              <h3 >Se quedarán en este cuarto.</h3>
 
             </div>
           </div>
@@ -203,7 +203,7 @@
             <img src="images/hotel/hotelGym.jpg">
             <div class="caption">
 
-              <h1 id="Htext">Podrán hacer ejercicios en gimnasio.</h1>
+              <h3 >Podrán hacer ejercicios en gimnasio.</h3>
 
             </div>
           </div>
@@ -214,7 +214,7 @@
             <img src="images/hotel/hotelTerrace.jpg">
             <div class="caption">
 
-              <h1 id="Htext">Disfrutarán la vista de la ciudad en la terraza</h1>
+              <h3 >Disfrutarán la vista de la ciudad en la terraza</h3>
 
             </div>
           </div>
@@ -337,6 +337,7 @@
 
         <div id="tangoBox" class="col-xs-12 col-md-4">
           <h1>El espectáculo de Tango</h1>
+          <h3>Para cena, hay asado con un espectáculo de Tango </h3>
           <img class="shadow" id="tango" src="images/foods/tango.jpg">
         </div>
 
