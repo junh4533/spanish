@@ -24,7 +24,8 @@ body,
 }
 
 body {
-    color: yellow;
+    color: red;
+    font-family: 'Bree Serif', serif;
 }
 
 
@@ -199,3 +200,20 @@ h2{
     text-align:center;
 }
 
+#Htext{
+    color:blue;
+}
+
+#extext{
+    color:pink;
+}
+
+#atext{
+    color:#C0ED1C;
+}
+h3{
+    color:#F2B40A;
+}
+#pricing{
+    color:#0EF0D9;
+}
