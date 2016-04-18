@@ -96,6 +96,7 @@ ul {
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.4);
     color:#1E90FF;
+    text-shadow: 1px 1px gold;
 }
 
 #hotel {
@@ -253,11 +254,11 @@ h2 {
 }
 
 .red {
-    color: #c85050;
+    color: 	#FF6A6A;
 }
 
 .orange {
-    color: #d97020;
+    color: #FFA54F;
 }
 
 .gold {
@@ -276,4 +277,6 @@ h2 {
 .dark{
     color:#aa3863;
 }
+
+
 
